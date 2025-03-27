@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danh Sách Tài Khoản</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="js.js"></script>
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">1407 Style</div>
+        <nav>
+            <ul>
+                <li><a href="#">Back</a></li>
+                <li><a href="#">Repositories</a></li>
+                <li><a href="#">Settings</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="container">
+        <aside class="sidebar">
+            <h2>Menu</h2>
+            <ul>
+                <li><a href="#">Dashboard</a></li>
+                <li><a href="#">Users</a></li>
+                <li><a href="#">Statistics</a></li>
+            </ul>
+        </aside>
+        
+        <main class="content">
+            <h1>Danh Sách Tài Khoản</h1>
+            <input type="text" id="search" placeholder="Tìm kiếm tài khoản..." onkeyup="filterAccounts()">
+            <ul id="account-list"></ul>
+        </main>
+        
+        <aside class="extra-info">
+            <h2>Thông tin thêm</h2>
+            <p>Thống kê số tài khoản.</p>
+        </aside>
+    </div>
+
+    <div class="ds">
+        <table id="bang"> 
+        </table>
+    </div>
+</body>
+</html>
